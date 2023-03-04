@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding: 0;
+}
+img { width: 100%; }
+
+.container{
+    width: 100%;
+}
+
+.section1{
+    width: 100%;
+    background-color: pink;
+    padding: 80px 0;
+}
+
+.wrapper{
+    width:100%;
+    max-width: 850px;
+    margin: auto;
+}
+.text-header{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.text-header h2{
+    text-align: center;
+}
+
+.text-header p{
+    text-align: center;
+}
+.main{
+    display:flex;
+    flex-direction: row-reverse;
+    position:relative;
+}
+.image-box{
+    width: 55%;
+    max-width: 500px;
+    position:absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+}
+.image-clone{
+    display:none;
+    background-position: center;
+    background-size: cover;
+    width: 55%;
+    max-width: 500px;
+    position:absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+}
+
+.info-box{
+    width: 50%;
+    max-width: 425px;
+    background-color: rgb(255, 139, 7);
+    padding: 75px;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+.info-box h3{
+    text-align: start;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: arial;
+}
+.info-box h2{
+    text-align: start;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: arial;
+}
+.info-box span{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.info-box p{
+    text-align: start;
+    font-size: 13px;
+
+}
+
+
+.section2{
+    width: 100%;
+    background-color: rgb(250, 250, 35);
+    padding: 70px 0;
+}
+
+.wrapper2{
+    width:100%;
+    max-width: 850px;
+    height:auto;
+    margin: auto;
+    position:relative;
+}
+
+.main2{
+    display:flex;
+}
+.image-box2{
+    width: 55%;
+    max-width: 500px;
+    position:absolute;
+    transform: translateY(-50%);
+    right: 0;
+    top: 50%;
+}
+.image-clone2{
+    display:none;
+    background-position: center;
+    background-size: cover;
+    width: 55%;
+    max-width: 500px;
+    position:absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+}
+
+.info-box2{
+    width: 50%;
+    max-width: 425px;
+    background-color: rgb(255, 139, 7);
+    padding: 75px;
+    box-sizing: border-box;
+    color: #fff;
+}
+   .info-box2 h3{
+       text-align: start;
+       margin-bottom: 15px;
+       font-size: 20px;
+       font-weight: 700;
+       font-family: arial;
+   }
+   .info-box2 h2{
+       text-align: start;
+       margin-bottom: 15px;
+       font-size: 30px;
+       font-weight: 300;
+       font-family: arial;
+   }
+   .info-box2 span{
+       font-size: 30px;
+       font-style: italic;
+        font-weight: 700;
+   }
+   
+   .info-box2 p{
+       text-align: start;
+       font-size: 13px;
+   }
+
+@media screen and (max-width: 750px){
+
+    .section1{
+        background-color: rgb(255, 139, 7);
+    }
+    .main{
+        flex-direction: column;
+    }
+    .image-box{
+        display:none;
+        position: static;
+        width: 100%;
+        max-width: calc(100% - 60px);
+        margin: 0 auto -21px;
+        transform: none;
+    
+    }
+    .image-clone{
+        display:flex;
+        position: static;
+        width: 100%;
+        max-width: calc(100% - 60px);
+        margin: 0 auto -21px;
+        transform: none;
+        z-index: 1;
+        opacity: 0.6;
+        transition: transform 0.9s, opacity 1s;
+    }
+    .image-clone:hover{
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+    .info-box{
+        width: 100%;
+        max-width: 100%;
+        padding: 50px 30px;
+        background-color: pink;
+        color: #000;
+    }
+    .section2{
+        width: 100%;
+        background-color: rgb(255, 139, 7);
+    }
+    .main2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image-box2{
+        display: none;
+        position: static;
+        width: 100%;
+        max-width: calc(100% - 60px);
+        margin: 0 auto -21px;
+        transform: none;
+        z-index: 1;
+
+    }
+    .image-clone2{
+        display:flex;
+        position: static;
+        width: 100%;
+        max-width: calc(100% - 60px);
+        margin: 0 auto -21px;
+        transform: none;
+        z-index: 1;
+        opacity: 0.5;
+        transition: transform  0.9s, opacity 1s;
+    }
+    .image-clone2:hover{
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+    .info-box2{
+        width: 100%;
+        max-width: 100%;
+        padding: 50px 30px;
+        background-color: yellow;
+        color: #000;
+    }
+}
+

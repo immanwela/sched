@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+        <head>
+            <title> </title>
+    
+        </head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+           
+            }
+            .section {
+                padding: 100px 0;
+            }
+            .sec01 { background: #f2f2f2; }
+            .sec02 { background: #fff; }
+            .sec03 { background: #000; }
+            
+            .container{
+                width: 100%;
+                max-width: 1200px;
+                 margin: auto;
+         
+            }
+            .card{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .box{
+               text-align: center;
+               list-style: none;
+               background-color: whitesmoke;
+               width: 23%;
+               box-sizing:border-box;
+               padding: 60px 20px;
+               position: relative;
+            }
+            .box_ttl {
+                font-size: 50px;
+                font-weight: 300;
+                text-decoration: none;
+      
+            }
+            .box p{
+                margin-top: 20px;
+                font-size: 15px;
+            }
+
+            .box_ttl::before{
+                content: "";
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: contain;
+                width: 40px;
+                height: 40px;
+                margin: auto;
+            }
+            
+            .box:nth-child(even) { background-color: darkgray;}
+            .box:nth-child(odd) { border: 1px solid #b4b4b4; background-color: #fff;}
+
+            
+            .box:first-child  .box_ttl:before { background-image: url(image/mail.png);}
+            .box:nth-child(2) .box_ttl:before { background-image: url(image/facebook.png);}
+            .box:nth-child(3) .box_ttl:before { background-image: url(image/tiktok.png);}
+            .box:nth-child(4) .box_ttl:before { background-image: url(image/instagram.png);}
+
+
+            .box_btn {
+                font-size: 20px;
+                color: #fff;
+                background-color: #26ceea;
+                width: 180px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 7px 10px;
+                text-align: center;
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width:767px) {
+                .section { padding: 50px 20px; }
+                .card { flex-direction: column; }
+                .box {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+
+            </style>
+    
+    <body>
+            <div class="section sec01">
+                <div class="container">
+
+                    <div class="card">
+                        <div class="box">
+                            <h3 class="box_ttl">Title 1</h3>
+                            <p class="box_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                            <a class="box_btn" href="">Read More</a>
+                        </div> 
+
+                        <div class="box">
+                            <h3 class="box_ttl">Title 2</h3>
+                            <p class="box_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                            <a class="box_btn" href="">Read More</a>
+                        </div> 
+
+                        <div class="box">
+                            <h3 class="box_ttl">Title 3</h3>
+                            <p class="box_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                            <a class="box_btn" href="">Read More</a>
+                        </div> 
+
+                        <div class="box">
+                            <h3 class="box_ttl">Title 4</h3>
+                            <p class="box_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                            <a class="box_btn" href="">Read More</a>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section sec02">
+                <div class="container">
+
+                    <div class="sample">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section sec03">
+                <div class="container">
+
+                    <div class="sample">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et veritatis doloribus tenetur aliquid minus molestiae eum esse quo necessitatibus consectetur perferendis commodi temporibus alias numquam. Ipsa officiis excepturi omnis.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+    </body>
+
+</html>
