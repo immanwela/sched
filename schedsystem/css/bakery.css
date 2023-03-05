@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #595eef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oleo Script';
+    opacity: 0.7;
+}
+.logo{
+    width: 148px;
+    height: auto;
+    margin-left: 100px;
+}
+.logo a{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.logo a:hover{
+    color:rgba(0, 0, 0, 0.6);
+}
+.logo a:active{
+    color: white;
+}
+.button-Hamburger{
+    display: none;
+}
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+
+}
+.navigation{
+    display: flex;
+    gap: 50px;
+    margin-right: 100px;
+    list-style-type: none;
+}
+.navigation li a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navigation a:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+.sticky{
+    position: fixed;
+    z-index: 1;
+}
+.sticky + .main-banner{
+    padding: 0;
+}
+.main-banner{
+    width: 100%;
+    height: 109vh;
+    background-image: url(../image/hh.png);
+    background-size: cover;
+}
+.text-box{
+    max-width: 1312px;
+    width: 90%;
+    height: auto;
+    margin: auto;    
+    position: absolute;
+    left: 680px;
+    bottom: 250px;
+}
+.text-title{ 
+    max-width: 500px;
+    height: auto;
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Noto Serif JP';
+}
+.text-description{
+    max-width: 1382px;
+    height: auto;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Noto Sans JP';
+    margin-top: 15px;
+}
+
+.container{
+    max-width: 1312px;
+    width: 90%;
+    height: auto;
+    margin: 70px auto auto auto;
+}
+.feature-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #B98E51;
+    font-family: 'Noto Serif JP';
+}
+
+.product-section{
+    width:100%;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    font-family: 'Noto Sans JP';
+}
+.product{
+    width: 309px;
+    height: 350px;
+
+}
+.product-image{
+    width: 100%;
+    height: 227px;
+}
+.product-name{
+    font-size: 20px;
+    font-weight: bold;
+    color:#655046;
+    text-align: center;
+    text-decoration: none;
+}
+.product-description{
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 14px;
+    color:#655046;
+    text-decoration: none;
+}
+.product a{
+    display:block;
+    text-decoration: none;
+}
+.product a:hover{
+    opacity: 0.8;
+}
+.product-section .slick-slide { padding: 0 10px; }
+.product-section .slick-prev, .slick-next {
+    background: #655046;
+    width: 40px;
+    height: 40px;
+}
+.product-section .slick-prev { left: -50px; }
+.product-section .slick-next { right: -50px; }
+
+.product-section .slick-prev:hover,
+.product-section .slick-prev:focus,
+.product-section .slick-next:hover,
+.product-section .slick-next:focus { background: #655046; opacity: .5; }
+
+
+.map-address-section{
+    width:100%;
+    height: auto;
+    margin-top: 70px;
+    font-family: 'Noto Sans JP';
+}
+.address{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 300;
+    color: #655046;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.mapouter{
+    height:300px;
+    width:100%;
+    position:relative;
+    text-align:right;
+}
+.gmap_canvas{
+    height:300px;
+    width:100%;
+    overflow:hidden;
+    background:none!important;
+}
+.gmap_iframe{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border: none;
+}
+
+.footer{
+    width:100%;
+    height: 193px;
+    background-color: #595eef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navigation2{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+}
+.navigation2 li a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oleo Script';
+    transition: 0.5s;
+}
+
+.navigation2 a:hover{
+    color: #000000;
+}
+.credits{
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Noto Serif JP';
+    
+}
+
+
+@media screen and (max-width: 700px){
+    .logo{
+        font-size: 25px;
+        margin-left: 38px;
+    }
+    .button-Hamburger{
+        display:block;
+        margin-right: 38px;
+    }
+    .button-Hamburger:hover{
+        cursor: pointer;
+    }
+    
+    .navigation{
+        width: 100%;
+        height: 180px;
+        top: 100px;
+        display: none;
+        position:absolute;
+        background: #655046;
+        opacity: 0.8;
+    }
+    .navigation li{
+        text-align:right;
+        margin: 20px 40px auto auto;
+    }
+    .show {display:block;}
+
+    .main-banner{
+        height: 318px;
+    }
+    .text-box{
+        padding-top: 38px;
+    }
+    .text-title{
+        font-size: 20px;
+    }
+    .text-description{
+        font-size: 11px;
+    }
+    .feature-title{
+        font-size: 20px;
+        text-align: center;
+    }
+}

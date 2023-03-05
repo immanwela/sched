@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.image-box1,
+.image-box2,
+.image-box3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.container-box4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.image-box4{
+    max-width: 500px;
+    height: 500px;
+}
+
+img{
+    width: 300px;
+    height: 270px;
+}
+
+
+.slick-slide { padding: 0 10px; }
+.slick-prev, 
+.slick-next {
+    background: #655046;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+}
+.slick-prev { left: -50px; }
+.slick-next { right: -50px; }
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus { background: #655046; opacity: .5; }
+
+.image-box2 .slick-prev, 
+.image-box2 .slick-next {
+    background: #000;
+}
+.image-box2 .slick-prev { left: -70px; }
+.image-box2 .slick-prev { right: -70px; }
+
+.image-box4 .slick-prev, 
+.image-box4 .slick-next {
+    background: #655046;
+    width: 40px;
+    height: 40px;
+    top: 25%;
+}
+
+.slick-dots li button:before{
+    font-size: 20px;
+}
+
