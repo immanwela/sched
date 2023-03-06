@@ -243,12 +243,13 @@
     width: 100%;
     max-width: 900px ;
 }
-.about{
-    background-color: antiquewhite;
+.contact, .about{
+    background-color: #595eef;
     margin: 70px;
     text-align: center;
+    color:#ffffff;
 }
-.about h1{
+.contact h1{
     margin-bottom: 20px;
     padding: 30px 0;
 }
@@ -260,12 +261,14 @@
     margin: 20px 230px;
     width: 30%;
 }
-.tact a{
+.tede{
     color: #000;
     text-decoration: none;
 }
+.about{padding: 60px;}
+.about h1{margin: 20px 0;}
 .forms{
-    background-color: antiquewhite;
+    background-color: #595eef;
     margin: 50px;
     padding: 0 200px;
 }
@@ -273,7 +276,10 @@
     display: grid;
     gap: 10px;
 }
-.form h1{text-align: center;}
+.form h1{
+    margin: 30px 0;
+    text-align: center;
+}
 .bar{
     border-radius: 25px;
     width: 100%;
@@ -287,8 +293,11 @@
 .container-btn{
     display: flex;
     gap: 10px;
+    padding: 30px 0;
 }
 .btn{width: 50%;}
+.rgtrbtn{width: 100%;}
+.signin{text-align: center;}
 @media screen and (max-width: 700px){
     .logo{
         font-size: 25px;

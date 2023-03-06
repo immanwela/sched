@@ -6,14 +6,14 @@
                     <div class="form">
                         <h1>USER LOGIN</h1>
                         <input class="bar" type="text" placeholder="Username" required>
-                        <input class="bar" type="text" placeholder="Password" required>
+                        <input class="bar" type="password" placeholder="Password" required>
                     </div>
                     <div class="container">
                         <label><input type="checkbox" checked="checked">Remember me</label>
                         <span class="pword">Forgot <a href="#">password?</a></span>
                 </div>
                     <div class="container-btn">
-                            <button class="btn" type="button">REGISTER</button>
+                            <button class="btn" type="register"><a class="tede" href="register.php">REGISTER</a></button>
                             <button class="btn" type="submit">LOGIN</button>
                            
                     </div>
