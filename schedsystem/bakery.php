@@ -3,12 +3,7 @@
     <?php include('bakery_header.php') ?>
     <body>
            <?php include('bakery_navbar.php') ?>
-            <div class="main-banner">
-                <!-- <div class="text-box">
-                <h2 class="text-title">Welcome Easternians!</h2>
-                <p class="text-description"> One Vision, One Mission, One Goal</p>
-                </div> -->
-            </div>
+            <div class="main-banner"> </div>
             <div class="container">
                         <h2 class="feature-title">Featured Events</h2>
                     

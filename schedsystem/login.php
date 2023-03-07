@@ -1,4 +1,6 @@
 <?php include('bakery_header.php') ?>
+<?php include('bakery_navbar.php') ?>
+<div class="main-banner"> </div>
 <section>  
     <div class="wrapper">
         <div class="forms">
@@ -21,4 +23,5 @@
             </div>
     </div>
 </section>
+<?php include('bakery_footer.php')?>
  

@@ -1,7 +1,7 @@
 <?php include('bakery_header.php') ?>
 <section>  
     <div class="wrapper">
-        <div class="forms">
+        <div class="forms-rgstr">
             <form action="#">
                     <div class="form">
                         <h1>REGISTER</h1>
